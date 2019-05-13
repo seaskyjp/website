@@ -1,0 +1,183 @@
+# Website title - used in the <title> tag of the <head> section of the website.
+title: Seasky
+# Description of the website used in the Meta Description.
+description: > # this means to ignore newlines until "baseurl:"
+  Seasky description.
+# Destination of the Jekyll site upon build of site.
+destination: _site
+# Include the Linaro Jekyll Theme
+theme: jumbo-jekyll-theme
+# Permalink for the blog posts of the Jekyll website.
+permalink: /:categories/:title/
+# Jekyll Responsive Images dir
+blog_images_dir: assets/images/blog/
+# Syntax highlighter for 96boards blog
+highlighter: rouge
+# Markdown version
+markdown: kramdown
+# production status for robots.txt and files alike.
+production: false
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge # Syntax highlighter for Kramdown.
+# Encoding of the files being included in the Jekyll Build.
+encoding: utf-8
+# Jekyll configuration for running the site in "Safe" mode.
+safe: false
+# Search label setting for site search with e.g. search/?fields.label=96Boards
+search-label: Seasky
+# Disqus Comments settings.
+disqus: true
+disqus_shortname: 'Seasky'
+
+# This is the url that is used when your site is built for canonicals etc.
+url: "https://seasky.jp"
+# url: "https://www.site-test.linaro.org"
+
+# Make sure that Liquid errors stop the build
+liquid:
+    error_mode: strict
+
+# Shema.org Setup -> used in the schema.html include.
+schema:
+    organisation:
+        name: Seasky
+        url: https://seasky.jp
+        sameAs:
+        address:
+
+# Files that should be excluded from the Jekyll build.
+exclude:
+  - Gemfile.lock
+  - .gitignore
+  - .git
+  - .asset-cache
+  - _site
+  # - _posts
+
+# Google Tag mangager site wide setting - for deployment of site to China.
+google-tag-manager: true
+
+# Social Configuration for the Jekyll SEO plugin.
+social:
+  name: Seasky
+  links:
+twitter:
+    username: 
+
+defaults:
+  - scope:
+        path: ""
+    values:
+        image: /assets/images/social-media-image.png
+  - scope:
+        path: ""
+        type: "posts"
+    values:
+        layout: post
+        comments: true
+  - scope:
+        path: ""
+        type: "company"
+    values:
+        layout: company
+  - scope:
+        path: "_company/archived"
+        type: "company"
+    values:
+        archived: true
+  - scope:
+        path: ""
+        type: "authors"
+    values:
+        layout: author
+  - scope:
+        path: ""
+        type: "about"
+    values:
+        layout: developer-services-layout
+        image:
+            name: logo.png
+            path: /assets/images/content/logo.png
+  - scope:
+        path: ""
+        type: "recruit"
+    values:
+        layout: developer-services-layout
+        image:
+            name: logo.png
+            path: /assets/images/content/logo.png
+  - scope:
+        path: "/sitemap.xml"
+    values:
+        redirect_from: /sitemap/
+# Gems that should be included in the Jekyll builld of this site.
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-readme-index
+  - bootstrap-sass
+  - uglifier
+  - jekyll-assets
+  - jekyll-tidy
+  - jekyll-redirect-from
+  - autoprefixer-rails
+  - jekyll-paginate-v2
+# Compress the html and beau2tify it.
+jekyll_tidy: # Compress the html and beautify it.
+    compress_html: true
+    exclude: [robots.txt] # Exclude the robots.txt file from removal of whitespace
+# Jekyll Assets plugin - set js and css to true so it compresses on jekyll build
+assets:
+  compress:
+        js: true
+  autoprefixer:
+      browsers: ["last 2 versions","> 5%","IE 9"]
+  sources:
+    - assets/js/
+    - assets/js/vendor/
+    - assets/js/app/
+    - assets/images
+    - assets/images/members
+    - assets/images/people
+    - assets/images/content
+    - assets/images/blog
+    - assets/css/
+
+# Sass configuration - compressed and sass_dir of the root Jekyll assets folder.
+sass:
+    style: compressed
+    load_paths:
+        - assets/css
+#paginate_path: /:categories/:num/
+
+# Jekyll Pagination V2 Configuration
+pagination:
+    permalink: '/:num/'
+    enabled: true
+    per_page: 9
+    trail:
+        before: 2
+        after: 2
+    sort_reverse: true
+    sort_field: 'date'
+
+# Jekyll pagination v2 autopages configuration.
+autopages:
+  enabled: false
+
+using_assets: true
+# Jekyll Collections configuration - Projects, Products and Documentation.
+collections:
+    about:
+        output: true
+        permalink: /:collection/:name/
+    recruit:
+        output: true
+        permalink: /:collection/:name/
+    company:
+        output: true
+        permalink: /membership/:name/
+    authors:
+        output: true
+        permalink: /author/:name/

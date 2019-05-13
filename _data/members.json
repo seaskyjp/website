@@ -1,0 +1,25 @@
+[
+    {
+        "id": "core",
+        "members": [
+            {
+                "image": "https://static.linaro.org/common/member-logos/arm.jpg",
+                "name": "Arm",
+                "url": "/membership/arm/"
+            },
+            {
+                "image": "https://static.linaro.org/common/member-logos/hisilicon.jpg",
+                "name": "HiSilicon",
+                "url": "/membership/hisilicon/"
+            },
+            {
+                "image": "https://static.linaro.org/common/member-logos/quic.jpg",
+                "name": "QuIC",
+                "url": "/membership/quic/"
+            }
+        ],
+        "membership_group_name": "Core Members",
+        "text": "Core membership is the highest level within Linaro. Core members have a seat on the Linaro board of directors, two votes on the Technical Steering Committee (TSC) and unlimited access to all of Linaro\u2019s activities.",
+        "url": "/membership/"
+    }
+]

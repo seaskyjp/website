@@ -1,0 +1,6 @@
+[
+    "^/about/meet-the-team(/?|/index.html)$ /about/ [R,L,NC]",
+    "^/faqs(/?|/index.html)$ /about/ [R,L,NC]",
+    "^/feed(/?|/index.html)$ /feed.xml [R,L,NC]",
+    "^/page_not_found(/?|/index.html)$ /404.html [R,L,NC]",
+]

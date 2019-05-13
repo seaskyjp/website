@@ -1,0 +1,9 @@
+- name: Apache Ambari
+  image: apache-ambari.png
+  url: https://ambari.apache.org/
+- name: Clang
+  image: clang.png
+  url: https://clang.llvm.org/
+- name: OpenJDK
+  image: openjdk.png
+  url: http://openjdk.java.net/

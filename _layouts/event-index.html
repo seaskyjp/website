@@ -1,0 +1,34 @@
+---
+layout: empty
+css-package: events-blog
+js-package: events-blog
+---
+<div class="container-fluid responsive-background" id="header-container">
+    <div class="row background-image overlay" id="jumbotron"
+        style="background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('{{page.image.path}}');">
+        <div id="jumbotron-content" class=" flex-container">
+            <div class="container flex-center" id="jumbotron-text">
+                <a href="/events/" class="btn btn-primary btn-sm all-events">
+                    <i class="fa fa-angle-left"></i> All Events
+                </a>
+                <h1 class="center-block" id="jumbotron-heading">{{page.title}}</h1>
+                <p class="center-block" id="jumbotron-sub-title">
+                    {{page.description}}
+                </p>
+                {% if page.event_url %}
+                <a href="{{page.event_url}}" class="btn btn-primary btn-sm">
+                    View Event Website <i class="fa fa-external-link-square"></i>
+                </a>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container-fluid" id="content-container">
+    <div class="row">
+        <div class="container">
+            {{content}}
+            {% include display-event-resources.html event=page.event %}
+        </div>
+    </div> 
+</div>

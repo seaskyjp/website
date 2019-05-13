@@ -1,0 +1,30 @@
+---
+service_id: 10
+title: 会社沿革
+short_name: 会社沿革
+permalink: /about/history/
+keywords: 会社沿革
+---
+
+<h1>会社沿革</h1>
+
+{% assign news_posts = site.categories["News"] | sort: 'date' | reverse %}
+{% assign timeline_items = site.data.timeline | sort: 'date' | reverse %}
+{% assign all_news = "" | split: "" %}
+{% for item in timeline_items %}
+    {% assign all_news = all_news | push: item %}
+{% endfor %}
+<!-- {% for item in news_posts  %}
+    {% assign all_news = all_news | push: item %}
+{% endfor %} -->
+{% assign all_news = all_news | sort: 'date' | reverse %}
+<div class="row linaro-timeline">
+        {% for news-posting in all_news %}
+        <strong>{{ news-posting.date | date: "%B %Y"}}</strong>
+        <p>
+            {{ news-posting.title | strip_html | truncatewords:30 }}
+        </p>
+
+        {% endfor %}
+
+</div>

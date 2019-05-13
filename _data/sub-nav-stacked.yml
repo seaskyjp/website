@@ -1,0 +1,11 @@
+pages:
+  -
+    list:
+      -
+        title: 採用情報
+        url: /recruit/info/
+      -
+        title: 募集要項
+        url: /recruit/info/
+
+    urls: [/recruit/info/, /recruit/info/]
