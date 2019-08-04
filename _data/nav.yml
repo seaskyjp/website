@@ -18,25 +18,15 @@ brand:
 pages:
     - title: 会社概要
       options:
-          - text: プロフィール
+          - text: 会社案内
             url: /about/profile/
-          - text: 社長挨拶
+          - text: ご挨拶
             url: /about/message/
-          - text: 会社沿革
-            url: /about/history/
-          - text: 認証取得
-            url: /about/certification/
           - text: 主な取引先
             url: /about/client/
-          - text: 組織図
-            url: /about/organization/
-          - text: アクセス
-            url: /about/access/
     - title: 事業内容
       url: /services/
     - title: 採用情報
       options:
-          - text: 採用情報
-            url: /recruit/info/
           - text: 募集要項
             url: /recruit/requirements/

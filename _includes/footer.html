@@ -36,6 +36,18 @@
                         {% if site.data.settings.youtube_username %}
                             <a href="https://www.youtube.com/{{site.data.settings.youtube_username}}" class="btn btn-social-icon"><i class="icon-youtube"></i></a>
                         {% endif %}
+                        {% if site.data.settings.tdb %}
+                            <p>
+                                <a href="http://www.tdb.co.jp/service/u/1005.jsp?TDBCompanyCode={{site.data.settings.tdb}}" target="_blank">
+                                <img src="https://www.tdb.co.jp/cnetec/img/TDBlogo_FMT_ja.gif" width="115" height="20" alt="クリックすると、このホームページ運営企業がTDB企業サーチで表示されます。" style="border:0;"></a>
+                                <br />
+                                <span style="text-decoration:none; font:10px 'ＭＳ Ｐゴシック',sans-serif; letter-spacing:.5px; text-align:center; margin:0px; padding:0px; color:#666666;">
+                                    TDB企業コード：<a href="http://www.tdb.co.jp/service/u/1005.jsp?TDBCompanyCode={{site.data.settings.tdb}}" target="_blank" style="color:#666666;">
+                                        {{site.data.settings.tdb}}</a>
+                                </span>
+                            </p>
+                        
+                        {% endif %}
                     </div>
                     <div style="clear:both;"></div>
                 </div>

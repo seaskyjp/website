@@ -7,13 +7,13 @@
                 <!-- List group -->
                 <ul class="list-group">
                     {% for news in site.categories.News limit: 10 %}
-                        <a href="{{news.url}}">
+                        <!-- <a href="{{news.url}}"> -->
                             <li class="list-group-item fly">{{news.title}}</li>
-                        </a>
+                        <!-- </a> -->
                     {% endfor %}
-                    <a href="/news/">
+                    <!-- <a href="/news/">
                         <li class="list-group-item list-group-item-success text-center">More News</li>
-                    </a>            
+                    </a>             -->
                 </ul>
             </div>
         </div>

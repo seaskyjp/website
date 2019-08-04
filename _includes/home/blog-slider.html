@@ -9,14 +9,14 @@
             {% for post in site.categories["News"] limit: 10 %}
                 <div class="item home-page-blog-post-slider-item">
                     <div class="col-xs-12 no-padding">
-                        <a href="{{post.url}}">
+                        <!-- <a href="{{post.url}}"> -->
                             <div class="blogs_home_block_post linaro-two">
                                 <h3 class="blogs_home_block_post_title">{{post.title}}</h3>
                                 <h6>
                                         {{post.date | date: "%B %Y"}}
                                 </h6>
                             </div>                
-                        </a>
+                        <!-- </a> -->
                     </div>
                 </div>
             {% endfor %}

@@ -2,35 +2,20 @@ pages:
   -
     list:
       -
-        title: プロフィール
+        title: 会社案内
         url: /about/profile/
       -
-        title: 社長挨拶
+        title: ご挨拶
         url: /about/message/
-      -
-        title: 会社沿革
-        url: /about/history/
-      -
-        title: 認証取得
-        url: /about/certification/
       -
         title: 主な取引先
         url: /about/client/
-      -
-        title: 組織図
-        url: /about/organization/
-      -
-        title: アクセス
-        url: /about/access/
-    urls: [/about/,/about/profile/,/about/message/,/about/history/,/about/certification/,
-    /about/client/,/about/organization/,/about/access/]
+    urls: [/about/,/about/profile/,/about/message/,/about/certification/,
+    /about/client/]
   -
     list:
-      -
-        title: 採用情報
-        url: /recruit/info/
       -
         title: 募集要項
         url: /recruit/requirements/
 
-    urls: [/recruit/info/, /recruit/requirements/]
+    urls: [/recruit/requirements/]

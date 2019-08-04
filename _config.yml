@@ -31,7 +31,7 @@ disqus: true
 disqus_shortname: 'Seasky'
 
 # This is the url that is used when your site is built for canonicals etc.
-url: "https://seasky.jp"
+url: "http://www.seasky.jp"
 # url: "https://www.site-test.linaro.org"
 
 # Make sure that Liquid errors stop the build
@@ -42,7 +42,7 @@ liquid:
 schema:
     organisation:
         name: Seasky
-        url: https://seasky.jp
+        url: http://www.seasky.jp
         sameAs:
         address:
 

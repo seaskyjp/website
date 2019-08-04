@@ -66,6 +66,7 @@ facebook_username:
 youtube_username:
 twitter_username:
 slideshare_username:
+tdb: 376022733
 # Blog setup
 blog:
     # Url for the blog tags page
@@ -113,4 +114,4 @@ disqus:
     enabled: true
     shortname: Seasky
 # Placeholder for Missing Images
-placeholder: /assets/images/logo.png
+placeholder: /assets/images
